@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeX-Download</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .container ,.info{
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .titleText{
+            margin-left: 21px;
+        }
+        #animex-logo{
+            box-shadow: 1px 2px 5px rgb(185, 185, 185);
+        }
+        
+    </style>
+   
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">    
+            <img src="./assets/icon.png" height=128 width=128 id="animex-logo" />
+            <div>
+                <h2 style="margin-left:21px;margin-bottom:21px">AnimeX 1.0.0b</h2>
+                <button type="button"style="margin-left:21px" id="download" class="btn btn-primary">
+                    Download
+                </button>  
+            </div>  
+        </div>
+    </div>
+    <script>
+        document.querySelector('#download').addEventListener("click",function(){
+            window.open("https://drive.google.com/file/d/1gcSd0QwX-JSBE-EnXbDx1fQv6cXxVLWB/view?usp=sharing")
+        })
+    </script>
+</body>
+
+</html>
